@@ -1,14 +1,13 @@
 <script>
-	import Sidebar from '../components/Sidebar/+page.svelte';
+	import Sidebar from '../../components/Sidebar/+page.svelte';
+	import { name } from '../../stores/stores';
 </script>
 
 <svelte:head>
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-	/>
+	<title>Ehub Projects</title>
 </svelte:head>
-<slot><Sidebar /></slot>
+
+{#if $name}<Sidebar />{/if}
 
 <style>
 	* {

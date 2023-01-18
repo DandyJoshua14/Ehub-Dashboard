@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Ehub Dashboard",
+        "description": "Creation of Entertainment hub's official dashboard for staffs only. <br> This is to enable the team have their own customised central point of information."
+    },
+    {
+        "id": 2,
+        "name": "Ehub Offical Site",
+        "description": "Entertainment hub's official website for world wide web. <br> For this project, it is going to be a large scale project and will take longer time than we might expect <br>. Eventually this will be done. This particular project will be opened to the public."
+    },
+    {
+        "id": 3,
+        "name": "Zoom-Patch",
+        "description": "Dispatch Service owned by Ehub. This isn't just any dispatch service, rather it's a dispatch service that can be used to transport live stock and goods. <br> For this recruiters will be needed, therefore solving the need of employment withing calabar, Nigeria"
+    }
+]
