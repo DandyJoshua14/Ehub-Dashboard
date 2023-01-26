@@ -1,25 +1,20 @@
 <script>
+	// @ts-nocheck
+
 	import { onMount } from 'svelte';
 	import Sidebar from '../../../components/Sidebar/+page.svelte';
 	import Footer from '../../../components/Footer/+page.svelte';
 	import { name, dateOfBirth, about, userGender } from '../../../stores/stores';
 	import { Container, Input, Form, FormGroup, Label, Icon, Button } from 'sveltestrap';
-	import { Server } from '@sveltejs/kit';
+	/** @type {import('./$types').PageData} */
+	export let data;
 	let gender = '';
 	let DOB = '';
 	let aboutUser = '';
+	// @ts-ignore
 	let user = $name.replace('-', ' ');
 	let editAcc = false;
-	async function getName() {
-		$name = prompt(
-			"What's Your Name?. Please Ensure to space your names and begin each name with an upper case alphabet"
-		);
-	}
-	onMount(() => {
-		getName();
-	});
-	/** @type {import('./$types').PageData} */
-	export let data;
+
 	$name = data.name;
 	async function editAccess() {
 		editAcc = true;
@@ -137,7 +132,6 @@
 					<br />
 				</div>
 			{/if}
-			<!-- <marquee direction="right">Hi</marquee> -->
 		</Container>
 		<br />
 		<br />

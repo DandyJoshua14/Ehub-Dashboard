@@ -2,15 +2,6 @@
 	import { onMount } from 'svelte';
 	import Sidebar from '../../components/Sidebar/+page.svelte';
 	import { name } from '../../stores/stores';
-
-	async function getName() {
-		$name = prompt(
-			"What's Your Name?. Please Ensure to space your names and begin each name with an upper case alphabet"
-		);
-	}
-	onMount(() => {
-		getName();
-	});
 </script>
 
 <svelte:head><title>Dashboard</title></svelte:head>

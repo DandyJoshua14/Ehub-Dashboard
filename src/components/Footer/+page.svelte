@@ -50,6 +50,7 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
 	.footer {
 		color: white;

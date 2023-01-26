@@ -1,11 +1,6 @@
 import mongoose from 'mongoose';
-import { MONGO_URL } from  '$env/static/private';
 const { Schema } = mongoose;
 
-
-mongoose.connect(MONGO_URL, () => {
-    console.log('Connected To Databse')
-})
 
 
 const userSchema = new Schema({
